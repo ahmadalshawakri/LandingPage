@@ -1,0 +1,426 @@
+/* Desktop: 1200px
+Laptop:1024px
+tablet:768px
+phone:480px */
+
+*{
+    background-repeat: no-repeat;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+}
+nav .nav_bar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.logo_mid{
+    display: none;
+}
+.nav_bar a{
+    padding-left: 4rem;
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1rem;
+    color: #18A0FB;
+    text-align: center;
+    cursor: pointer;
+}
+
+nav .nav_button{
+    width: max-content;
+    display: flex;
+    margin-right: 1rem;
+}
+
+.nav_button button{
+    margin-left: 1rem;
+}
+
+#login1{
+    width: 8rem;
+    height: 3rem;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: 'Montserrat';
+    background-color: #fff;
+    border: 0.1rem solid #18A0FB;
+    border-radius: 0.5rem;
+    color: #18A0FB;
+    cursor: pointer;
+}
+#register1{
+    width: 8rem;
+    height: 3rem;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: 'Montserrat';
+    background-color: #18A0FB;
+    border: 0.1rem solid #18A0FB;
+    border-radius: 0.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.deer-photo {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-image: url(./deer.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.photo{
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20rem;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.photo h1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Montserrat';
+    line-height: 3rem;
+}
+.photo button{
+    position: relative;
+    display: flex;
+    width: 8rem;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #18A0FB;
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff;
+    border: 1px solid #18A0FB;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.info{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 4rem;
+    margin-left: 1.5rem;
+}
+.info > h1{
+    position: relative;
+    width: 100%;
+    text-align: justify;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 750;
+    font-size: 2.2rem;
+}
+.info > div{
+    width: 45%;
+}
+.info > div:nth-child(even){
+    margin-right: 5.5rem;
+}
+.info > div h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+.info > div p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: justify;
+}   
+.info > div button{
+    width: 8rem;
+    height: 2.5rem;
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #18A0FB;
+    border: 0.1rem solid #18A0FB;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.images{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 3rem 1.5rem;
+}
+.images > div{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 3rem 0;
+}
+.images > div img{
+    width: 50%;
+}
+.images > div h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin: 0 0.8rem
+}
+.images > div p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: justify;
+    margin:0.8rem;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2rem 2rem;
+}
+.contact > div:nth-child(1) p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+.contact > div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.contact > div:nth-child(2) button{
+    margin:0 1.5rem;
+    width: 8rem;
+    height: 3rem;
+}
+#join_today{
+    width: 12rem;
+    height: 3.2rem;
+    background-color: #18A0FB;
+    color: #fff;
+    border: 0.1rem solid #18A0FB;
+    border-radius: 0.2rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    cursor: pointer;
+}
+#contact{
+    width: 12rem;
+    height: 3.2rem;
+    background-color: #fff;
+    color: #18A0FB;
+    border: 0.1rem solid #18A0FB;
+    border-radius: 0.2rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    cursor: pointer;
+}
+
+
+footer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+footer  div.links{
+    display: flex;
+    justify-content: space-between;
+}
+div.links div.q_links a{
+    padding: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000;
+}
+div.links div.q_links:nth-child(1) a{
+    margin-left: 1rem;
+}
+div.links div.q_links:nth-child(3) a{
+    margin-right: 1rem;
+}
+hr{
+    width: 95%;
+}
+.social_media div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.social_media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+div.social_media div:nth-child(1) a{
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.3rem;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 1.7rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+}
+
+.social_media > h6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+@media (max-width: 1050px){
+    nav{
+        justify-content: space-between;
+    }
+    nav .nav_bar{
+        align-items: center;
+        justify-content: center;
+    }
+    .nav_bar img{
+        display: none;
+    }
+    .logo_mid{
+        display: inline-block;
+    }
+    .nav_button {
+        flex-direction: column;
+        margin-top: 0.1rem;
+    }
+    
+    .nav_bar > a{
+        width: 45%;
+        padding:0.5rem 0;
+    }
+
+    #register1 {
+        height: 2rem;
+    }
+    #login1 {
+        height: 2rem;
+        margin-bottom: 0.1rem;
+    }
+    .info{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info h1{
+        text-align: center;
+    }
+    .info > div{
+        text-align: center;
+        width: 100%;
+    }
+    .info > div:nth-child(even){
+        margin: 0;
+    }
+    .info > div p{
+        text-align: center;
+    }
+    .deer-photo{
+        margin-top: 0.2rem;
+    }
+    .images > div{
+        flex-direction: column;
+    }
+    .images > div img{
+        width: 100%;
+    }
+    .images > div h3{
+        text-align: center;
+    }
+    .images > div p{
+        text-align: center;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .contact > div:nth-child(1) p{
+        text-align: center;
+    }
+    .contact > div:nth-child(2){
+        width: 100%;
+    }
+    hr{
+        display: none;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer div.links{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .q_links{
+        display: flex;
+        flex-direction: column;
+    }
+    .links div:nth-child(2){
+        display: none;
+    }
+    div.social_media{
+        margin: 0;
+    }
+
+}
